@@ -19,18 +19,20 @@
 <body class="bg-[#0f172a] text-white min-h-screen">
     <!-- Header -->
     <header class="header-glass sticky top-0 z-50 border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-2 shrink-0">
-                <span class="text-2xl">⚡</span>
-                <h1 class="text-lg sm:text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">TechPulse</h1>
+        <div class="max-w-7xl mx-auto px-3 sm:px-4 py-2 sm:py-3">
+            <div class="flex items-center justify-between gap-2">
+                <div class="flex items-center gap-1.5 shrink-0">
+                    <span class="text-xl sm:text-2xl">⚡</span>
+                    <h1 class="text-base sm:text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent hidden sm:block">TechPulse</h1>
+                </div>
+                <nav class="flex gap-1 overflow-x-auto no-scrollbar">
+                    <button onclick="window.switchTab('news')" id="tab-news" class="tab-btn active px-2 py-1.5 rounded-lg text-[11px] sm:text-sm font-medium transition-all whitespace-nowrap">📰 News</button>
+                    <button onclick="window.switchTab('jobs')" id="tab-jobs" class="tab-btn px-2 py-1.5 rounded-lg text-[11px] sm:text-sm font-medium transition-all whitespace-nowrap">💼 Jobs</button>
+                    <button onclick="window.switchTab('market')" id="tab-market" class="tab-btn px-2 py-1.5 rounded-lg text-[11px] sm:text-sm font-medium transition-all whitespace-nowrap">📊 Market</button>
+                    <button onclick="window.switchTab('interview')" id="tab-interview" class="tab-btn px-2 py-1.5 rounded-lg text-[11px] sm:text-sm font-medium transition-all whitespace-nowrap">🎤 Prep</button>
+                    <button onclick="window.switchTab('jd')" id="tab-jd" class="tab-btn px-2 py-1.5 rounded-lg text-[11px] sm:text-sm font-medium transition-all whitespace-nowrap">📄 Resume</button>
+                </nav>
             </div>
-            <nav class="flex gap-1 overflow-x-auto no-scrollbar ml-3">
-                <button onclick="window.switchTab('news')" id="tab-news" class="tab-btn active px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">📰 News</button>
-                <button onclick="window.switchTab('jobs')" id="tab-jobs" class="tab-btn px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">💼 Jobs</button>
-                <button onclick="window.switchTab('market')" id="tab-market" class="tab-btn px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">📊 Market</button>
-                <button onclick="window.switchTab('interview')" id="tab-interview" class="tab-btn px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">🎤 Interview</button>
-                <button onclick="window.switchTab('jd')" id="tab-jd" class="tab-btn px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">📄 Resume</button>
-            </nav>
         </div>
     </header>
 
