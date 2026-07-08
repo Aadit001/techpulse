@@ -109,7 +109,11 @@ Product Managers in India and remote roles who want to:
 
 ## Author
 
+<<<<<<< HEAD
 Built with ⚡ by [Aditya Tiwari](https://www.linkedin.com/in/aditya-tiwari-0011) | [LinkedIn](https://www.linkedin.com/in/aditya-tiwari-0011)
+=======
+Built by [Aditya Tiwari] [LinkedIn](https://linkedin.com/in/aditya-tiwari-0011)
+>>>>>>> aeb136e78178d611aa0e0adc77bb3005cfdf9c39
 
 ---
 
