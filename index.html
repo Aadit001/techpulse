@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>TechPulse - Daily Tech Digest & PM Career Hub</title>
+    <!-- PWA Meta -->
+    <meta name="description" content="All-in-one career hub for Product Managers: tech news, jobs, market intelligence, interview prep, and resume optimizer.">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TechPulse">
+    <link rel="manifest" href="manifest.json">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%236366f1'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-size='60'>⚡</text></svg>" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icons/icon-192.svg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,16 +20,16 @@
     <!-- Header -->
     <header class="header-glass sticky top-0 z-50 border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 shrink-0">
                 <span class="text-2xl">⚡</span>
-                <h1 class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">TechPulse</h1>
+                <h1 class="text-lg sm:text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">TechPulse</h1>
             </div>
-            <nav class="flex gap-1 sm:gap-2">
-                <button onclick="window.switchTab('news')" id="tab-news" class="tab-btn active px-3 py-1.5 rounded-lg text-sm font-medium transition-all">📰 News</button>
-                <button onclick="window.switchTab('jobs')" id="tab-jobs" class="tab-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-all">💼 Jobs</button>
-                <button onclick="window.switchTab('market')" id="tab-market" class="tab-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-all">📊 Market</button>
-                <button onclick="window.switchTab('interview')" id="tab-interview" class="tab-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-all">🎤 Interview</button>
-                <button onclick="window.switchTab('jd')" id="tab-jd" class="tab-btn px-3 py-1.5 rounded-lg text-sm font-medium transition-all">📄 Resume Optimizer</button>
+            <nav class="flex gap-1 overflow-x-auto no-scrollbar ml-3">
+                <button onclick="window.switchTab('news')" id="tab-news" class="tab-btn active px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">📰 News</button>
+                <button onclick="window.switchTab('jobs')" id="tab-jobs" class="tab-btn px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">💼 Jobs</button>
+                <button onclick="window.switchTab('market')" id="tab-market" class="tab-btn px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">📊 Market</button>
+                <button onclick="window.switchTab('interview')" id="tab-interview" class="tab-btn px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">🎤 Interview</button>
+                <button onclick="window.switchTab('jd')" id="tab-jd" class="tab-btn px-2 sm:px-3 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all whitespace-nowrap">📄 Resume</button>
             </nav>
         </div>
     </header>
@@ -142,5 +150,13 @@
     <script src="js/interview.js" defer></script>
     <script src="js/jd-optimizer.js" defer></script>
     <script src="js/app.js" defer></script>
+    <script>
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js').catch(() => {});
+            });
+        }
+    </script>
 </body>
 </html>

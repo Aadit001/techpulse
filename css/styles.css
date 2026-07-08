@@ -77,4 +77,25 @@
 /* Mobile */
 @media (max-width: 640px) {
     .tab-btn { font-size: 0.7rem; padding: 0.4rem 0.6rem; }
+    .card { border-radius: 0.75rem; }
+    .card:hover { transform: none; } /* Disable hover lift on touch devices */
+    .filter-chip { font-size: 0.65rem; padding: 0.25rem 0.6rem; }
+    #modal-overlay > div { max-height: 90vh; margin: 0.5rem; padding: 1rem; border-radius: 1rem; }
+}
+
+/* Hide scrollbar on nav */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Safe area for notched phones */
+@supports (padding: env(safe-area-inset-bottom)) {
+    footer { padding-bottom: calc(1rem + env(safe-area-inset-bottom)); }
+    header { padding-top: env(safe-area-inset-top); }
+}
+
+/* Touch-friendly tap targets */
+@media (pointer: coarse) {
+    .tab-btn { min-height: 44px; display: flex; align-items: center; }
+    .filter-chip { min-height: 36px; display: inline-flex; align-items: center; }
+    button, a { min-height: 44px; }
 }
