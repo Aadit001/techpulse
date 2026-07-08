@@ -109,7 +109,7 @@ Product Managers in India and remote roles who want to:
 
 ## Author
 
-Built with ⚡ by [Your Name](https://your-portfolio-url.com) | [LinkedIn](https://linkedin.com/in/your-profile)
+Built by [Aditya Tiwari] [LinkedIn](https://linkedin.com/in/aditya-tiwari-0011)
 
 ---
 
