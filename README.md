@@ -2,7 +2,7 @@
 
 A comprehensive web app built for Product Managers to stay updated, find jobs, prepare for interviews, and optimize their resumes — all in one place.
 
-**🔗 [Live Demo](#)** *(update with your hosted URL)*
+**🔗 [Live Demo](https://aadit001.github.io/techpulse/)**
 
 ---
 
@@ -109,9 +109,7 @@ Product Managers in India and remote roles who want to:
 
 ## Author
 
-<<<<<<< HEAD
-Built with ⚡ by [Aditya Tiwari](https://www.linkedin.com/in/aditya-tiwari-0011) | [LinkedIn](https://www.linkedin.com/in/aditya-tiwari-0011)
-=======
+
 Built by [Aditya Tiwari] [LinkedIn](https://linkedin.com/in/aditya-tiwari-0011)
 >>>>>>> aeb136e78178d611aa0e0adc77bb3005cfdf9c39
 
